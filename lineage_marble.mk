@@ -16,6 +16,9 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 23049PCD8G
 
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.crdroid.maintainer=kooreia
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="marble_global-user 15 AQ3A.250226.002 OS3.0.4.0.VMRMIXM release-keys" \
     BuildFingerprint=POCO/marble_global/marble:15/AQ3A.250226.002/OS3.0.4.0.VMRMIXM:user/release-keys \
