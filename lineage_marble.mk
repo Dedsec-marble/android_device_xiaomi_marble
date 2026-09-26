@@ -10,6 +10,15 @@ $(call inherit-product, device/xiaomi/marble/device.mk)
 # Inherit from common lineage configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Axion about:
+AXION_CAMERA_REAR_INFO := 50,50,12
+AXION_CAMERA_FRONT_INFO := 15.3
+AXION_MAINTAINER := @joao-lisa
+AXION_PROCESSOR := Snapdragon_7_Plus_Gen_2
+
+# Axion flags:
+TARGET_INCLUDE_AXFX := true
+
 PRODUCT_NAME := lineage_marble
 PRODUCT_DEVICE := marble
 PRODUCT_MANUFACTURER := Xiaomi

@@ -18,7 +18,12 @@ $(call inherit-product, vendor/xiaomi/marble/marble-vendor.mk)
 
 # Init scripts
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init.marble.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.marble.rc
+    $(LOCAL_PATH)/rootdir/etc/init.marble.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.marble.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.ax_kernel_manager.marble.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.ax_kernel_manager.marble.rc
+
+# Axion Kernel Manager
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/kernel/ax_kernel_manager_marble.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ax_kernel_manager.xml
 
 # Audio
 PRODUCT_PACKAGES += \
